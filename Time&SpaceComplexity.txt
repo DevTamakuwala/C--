@@ -42,8 +42,3 @@ Space complexity:
             extra space taken by the algorithm to performe some any task.
 
         We will not consider the input space in space complexity we will only consider the Axiliaury space to find out the space complexity.
-
-
-
-Time and space complexity of recursion:
-    
