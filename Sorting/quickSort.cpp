@@ -28,7 +28,7 @@ The time complexity of this in worst case will be O(n^2)
 and in average case it will be O(n Log n)
 
 Que :- When there will be worst case complexity in quick sort ? 
-Ans :- We will be having worst case complexity at that time when we have pivot as either smalled element or largest element of the array.
+Ans :- We will be having worst case complexity at that time when we have pivot as either smallest element or largest element of the array.
 */
 #include <iostream>
 #include <conio.h>

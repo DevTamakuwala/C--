@@ -8,6 +8,18 @@
 *if there has been swapping done.
 *and after completing the inner loops each iteration we will check for the isSwap value and if there will not be any swapped
 *then we will stop the outter loop and exit the algorithm. by this we can optimise for algorithm for sorted or semi sorted element.
+
+
+pseudo code:
+for i <- 0 to n-1
+    isSwap = false
+    for j <- 0 to n-i-1
+        if arr[j] > arr[j+1]
+            swap(arr[j], arr[j+1])
+            isSwap = true
+    
+    if isSwap == false
+        return
 */
 
 

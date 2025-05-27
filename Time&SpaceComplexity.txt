@@ -1,0 +1,49 @@
+Time complexity:
+    NOT actual time taken but the amout of time as function of input size(n).
+        Taken time in terms of operations.
+
+        Meaning based on the size of the input how many operations will be performed will be measured and how the number of input will be affected on the number of operations that behaviour is called time complexity.
+
+
+        EG:
+            Linear search
+                size of an array is 6
+
+                for (int i = 0; i < 6; i++)
+                {
+                    if (arr[i] == value)
+                    {
+                        return i;
+                    }
+                }
+                return -1;
+
+
+                in this, the for loop will be executed for 6 times which is the length of the array.
+
+                SO the time complexity for Linear search is O(n)
+
+        Time complexity is denoted by O() which shows the time complexity in worst case.
+
+        The worst case is also known as upper bound denoted by O()
+        The average case is denoted as Theeta
+        The Best case is also known as lower bounf denoted by omega
+
+
+
+Space complexity:
+    Amount of Space taken by an algorithm as function of input size (n).
+
+
+    There are two types of spaces taken by the program
+        1). Input Space:
+            Actual space for for the input from the user or other program.
+        2). Axiliaury:
+            extra space taken by the algorithm to performe some any task.
+
+        We will not consider the input space in space complexity we will only consider the Axiliaury space to find out the space complexity.
+
+
+
+Time and space complexity of recursion:
+    
