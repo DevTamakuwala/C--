@@ -142,7 +142,7 @@ class List{
             Node* prev = NULL;
             Node* nextNode = NULL;
 
-            tail = curr;
+            // tail = curr;
 
             while (curr != NULL){
                 nextNode = curr->next;

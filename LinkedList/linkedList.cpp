@@ -15,17 +15,16 @@ public:
 
 class List{
     Node* head;
-    Node* tail;
 
     public:
         List(){
-            tail = head = NULL;
+            head = NULL;
         }
 
         void push_front(int val){
             Node* newNode = new Node(val);
             if(head == NULL){
-                head = tail = newNode;
+                head  = newNode;
                 return;
             } else {
                 newNode->next = head;
@@ -36,11 +35,15 @@ class List{
         void push_back(int val){
             Node* newNode = new Node(val);
             if(head == NULL){
-                head = tail = newNode;
+                head =  newNode;
                 return;
             } else {
+                Node* tail = head;
+                while (tail->next != nullptr)
+                {
+                    tail = tail->next;
+                }
                 tail->next = newNode;
-                tail = newNode;
                 return;
             }
         }
@@ -56,21 +59,27 @@ class List{
                 return;
             }
         }
-        void pop_back(){
-            if(head == NULL){
-                cout<<"Linked List is empty.\n";
-                return;
-            } else {
-                Node* temp = head;
-                while(temp->next != tail){
-                    temp = temp->next;
-                }
-                cout<<temp->next->data<<" Removed from back."<<endl;
-                temp->next = NULL;
-                delete tail;
-                tail = temp;
+        void pop_back() {
+            if (!head) {
+                cout << "List is empty.\n";
                 return;
             }
+
+            // Only one node
+            if (!head->next) {
+                delete head;
+                head = nullptr;
+                return;
+            }
+
+            // More than one node
+            Node* temp = head;
+            while (temp->next->next)
+                temp = temp->next;
+
+            cout<<temp->next->data<<" Deleted"<<endl;
+            delete temp->next;
+            temp->next = nullptr;
         }
 
         void display(){
@@ -102,11 +111,6 @@ class List{
                 }
                 
                 temp = temp->next;
-            }
-
-            if(temp == tail){
-                push_back(val);
-                return;
             }
 
             Node* newNode = new Node(val);

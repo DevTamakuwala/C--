@@ -1,7 +1,5 @@
 /*
-In this is sorting technique we will find the smallest element in the array and 
-put it in the starting of the array and again check for the smallest element from 1 to n in the array and again replace it witl 1st
-element.
+In this is sorting technique we will find the smallest element in the array and put it in the starting of the array and again check for the smallest element from 1 to n in the array and again replace it witl 1st element.
 
 So first we will assume the very first element of the array as the smallest element and then we will compare that element with all the
 other elements in the array and we will replace that smallest element wil the first element and then we will move from first element to
